@@ -2,22 +2,82 @@ package basiccalculator;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.geometry.NodeOrientation;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
-
-import java.util.ArrayList;
-import java.util.Arrays;
+import javafx.scene.control.*;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
 
 public class MainController {
+
+    @FXML
+    private AnchorPane upperAnchorPane;
+    @FXML
+    private AnchorPane lowerAnchorPane;
+    @FXML
+    private MenuBar menuBar;
+
+    @FXML
+    private Button acButtonStyle;
+
+    @FXML
+    private Button addingButtonStyle;
+
+    @FXML
+    private Button decimalButtonStyle;
+
+    @FXML
+    private Button deleteButtonStyle;
+
+    @FXML
+    private Button divisionButtonStyle;
+
+    @FXML
+    private Button eightButtonStyle;
+
+    @FXML
+    private Button equalButtonStyle;
+
+    @FXML
+    private Button fiveButtonStyle;
+
+    @FXML
+    private Button fourButtonStyle;
+
+    @FXML
+    private Label labelForEstimated;
+
+    @FXML
+    private Button multiplyButtonStyle;
+
+    @FXML
+    private Button nineButtonStyle;
+
+    @FXML
+    private Button oneButtonStyle;
+
+    @FXML
+    private Button percentageButtonStyle;
+
+    @FXML
+    private Button sevenButtonStyle;
+
+    @FXML
+    private Button sixButtonStyle;
+
+    @FXML
+    private Button subtractButtonStyle;
 
     @FXML
     private TextField textAreaForCalculation;
 
     @FXML
-    private Label labelForEstimated;
+    private Button threeButtonStyle;
+
+    @FXML
+    private Button twoButtonStyle;
+
+    @FXML
+    private Button zeroButtonStyle;
 
     private StringBuilder calculationString = new StringBuilder();
 
@@ -33,6 +93,180 @@ public class MainController {
             }
         }
         return false;
+    }
+
+    @FXML
+    void blueColorTrigger(ActionEvent event) {
+        menuBar.setStyle("-fx-background-color: #0196C1;");
+
+        upperAnchorPane.setStyle("-fx-background-color: #B3E0EE;");
+        textAreaForCalculation.setStyle("-fx-background-color: #E8F9FD;-fx-text-fill: #046C95  ;");
+        labelForEstimated.setStyle("-fx-text-fill: #0196C1 ;");
+
+        lowerAnchorPane.setStyle("-fx-background-color: #B3E0EE;");
+
+        String style = "-fx-background-color: #48b5d6; -fx-text-fill: #E8F9FD;";
+        zeroButtonStyle.setStyle(style);
+        oneButtonStyle.setStyle(style);
+        twoButtonStyle.setStyle(style);
+        threeButtonStyle.setStyle(style);
+        fourButtonStyle.setStyle(style);
+        fiveButtonStyle.setStyle(style);
+        sixButtonStyle.setStyle(style);
+        sevenButtonStyle.setStyle(style);
+        eightButtonStyle.setStyle(style);
+        nineButtonStyle.setStyle(style);
+
+        decimalButtonStyle.setStyle(style);
+        percentageButtonStyle.setStyle(style);
+        divisionButtonStyle.setStyle(style);
+        multiplyButtonStyle.setStyle(style);
+        subtractButtonStyle.setStyle(style);
+        addingButtonStyle.setStyle(style);
+        acButtonStyle.setStyle(style);
+        deleteButtonStyle.setStyle(style);
+        equalButtonStyle.setStyle("-fx-background-color: #0196c1 ; -fx-text-fill: #E8F9FD;");
+
+
+    }
+
+    @FXML
+    void pinkColorTrigger(ActionEvent event) { // code: EABEC3, DD868C, F5DDE0, D0637C, FFF0F3
+        menuBar.setStyle("-fx-background-color: #EABEC3;");
+
+        upperAnchorPane.setStyle("-fx-background-color: #F5DDE0;");
+        textAreaForCalculation.setStyle("-fx-background-color: #FFF0F3 ;-fx-text-fill: #D0637C;");
+        labelForEstimated.setStyle("-fx-text-fill: #DD868C;");
+
+        lowerAnchorPane.setStyle("-fx-background-color: #F5DDE0;");
+
+        String style = "-fx-background-color: #DD868C; -fx-text-fill: #FFF0F3 ;";
+        zeroButtonStyle.setStyle(style);
+        oneButtonStyle.setStyle(style);
+        twoButtonStyle.setStyle(style);
+        threeButtonStyle.setStyle(style);
+        fourButtonStyle.setStyle(style);
+        fiveButtonStyle.setStyle(style);
+        sixButtonStyle.setStyle(style);
+        sevenButtonStyle.setStyle(style);
+        eightButtonStyle.setStyle(style);
+        nineButtonStyle.setStyle(style);
+
+        decimalButtonStyle.setStyle(style);
+        percentageButtonStyle.setStyle(style);
+        divisionButtonStyle.setStyle(style);
+        multiplyButtonStyle.setStyle(style);
+        subtractButtonStyle.setStyle(style);
+        addingButtonStyle.setStyle(style);
+        acButtonStyle.setStyle(style);
+        deleteButtonStyle.setStyle(style);
+        equalButtonStyle.setStyle(style);
+    }
+
+    @FXML
+    void greenColorTrigger(ActionEvent event) { // code: 549895, 387271, 8EBCB1, 245254, D6F5E9
+        menuBar.setStyle("-fx-background-color: #549895;");
+
+        upperAnchorPane.setStyle("-fx-background-color: #8EBCB1;");
+        lowerAnchorPane.setStyle("-fx-background-color: #8EBCB1;");
+
+        textAreaForCalculation.setStyle("-fx-background-color: #D6F5E9 ;-fx-text-fill: #245254;");
+        labelForEstimated.setStyle("-fx-text-fill: #387271;");
+
+        String style = "-fx-background-color: #387271; -fx-text-fill: #D6F5E9;";
+
+        zeroButtonStyle.setStyle(style);
+        oneButtonStyle.setStyle(style);
+        twoButtonStyle.setStyle(style);
+        threeButtonStyle.setStyle(style);
+        fourButtonStyle.setStyle(style);
+        fiveButtonStyle.setStyle(style);
+        sixButtonStyle.setStyle(style);
+        sevenButtonStyle.setStyle(style);
+        eightButtonStyle.setStyle(style);
+        nineButtonStyle.setStyle(style);
+
+        decimalButtonStyle.setStyle(style);
+        percentageButtonStyle.setStyle(style);
+        divisionButtonStyle.setStyle(style);
+        multiplyButtonStyle.setStyle(style);
+        subtractButtonStyle.setStyle(style);
+        addingButtonStyle.setStyle(style);
+        acButtonStyle.setStyle(style);
+        deleteButtonStyle.setStyle(style);
+        equalButtonStyle.setStyle("-fx-background-color: #245254; -fx-text-fill: #D6F5E9;");
+    }
+
+
+    @FXML
+    void vintageColorTrigger(ActionEvent event) { // code: F6BD60,84A59D, F7EDE2,F28482, FEF9EF
+        menuBar.setStyle("-fx-background-color: #F6BD60;");
+
+        upperAnchorPane.setStyle("-fx-background-color: #F7EDE2;");
+        textAreaForCalculation.setStyle("-fx-background-color: #FEF9EF;-fx-text-fill: #F28482;");
+        labelForEstimated.setStyle("-fx-text-fill: #84A59D;");
+
+        lowerAnchorPane.setStyle("-fx-background-color: #F7EDE2;");
+
+        String style = "-fx-background-color: #84A59D; -fx-text-fill: #FEF9EF;";
+
+        zeroButtonStyle.setStyle(style);
+        oneButtonStyle.setStyle(style);
+        twoButtonStyle.setStyle(style);
+        threeButtonStyle.setStyle(style);
+        fourButtonStyle.setStyle(style);
+        fiveButtonStyle.setStyle(style);
+        sixButtonStyle.setStyle(style);
+        sevenButtonStyle.setStyle(style);
+        eightButtonStyle.setStyle(style);
+        nineButtonStyle.setStyle(style);
+
+        decimalButtonStyle.setStyle(style);
+        percentageButtonStyle.setStyle(style);
+        divisionButtonStyle.setStyle(style);
+        multiplyButtonStyle.setStyle(style);
+        subtractButtonStyle.setStyle(style);
+        addingButtonStyle.setStyle(style);
+        acButtonStyle.setStyle(style);
+        deleteButtonStyle.setStyle(style);
+        equalButtonStyle.setStyle("-fx-background-color: #F28482; -fx-text-fill: FEF9EF;");
+
+    }
+
+    @FXML
+    void darkColorTrigger(ActionEvent event) {
+        menuBar.setStyle("-fx-background-color: #2B2F6C;");
+
+        upperAnchorPane.setStyle("-fx-background-color: #564779;");
+        textAreaForCalculation.setStyle("-fx-background-color: #000c43;-fx-text-fill: #DE978F;");
+        labelForEstimated.setStyle("-fx-text-fill: #DE978F;");
+
+        lowerAnchorPane.setStyle("-fx-background-color: #564779;");
+
+        String style = "-fx-background-color: #2B2F6C; -fx-text-fill: #DE978F;";
+
+        zeroButtonStyle.setStyle(style);
+        oneButtonStyle.setStyle(style);
+        twoButtonStyle.setStyle(style);
+        threeButtonStyle.setStyle(style);
+        fourButtonStyle.setStyle(style);
+        fiveButtonStyle.setStyle(style);
+        sixButtonStyle.setStyle(style);
+        sevenButtonStyle.setStyle(style);
+        eightButtonStyle.setStyle(style);
+        nineButtonStyle.setStyle(style);
+
+        decimalButtonStyle.setStyle(style);
+        percentageButtonStyle.setStyle(style);
+        divisionButtonStyle.setStyle(style);
+        multiplyButtonStyle.setStyle(style);
+        subtractButtonStyle.setStyle(style);
+        addingButtonStyle.setStyle(style);
+        acButtonStyle.setStyle(style);
+        deleteButtonStyle.setStyle(style);
+        equalButtonStyle.setStyle(style);
+//        equalButtonStyle.setStyle("-fx-background-color: #000c43; -fx-text-fill: #DE978F;");
+
     }
 
     @FXML
@@ -217,7 +451,11 @@ public class MainController {
 
     @FXML
     void onSubtractionButtonClick(ActionEvent event) {
-        if (!calculationString.isEmpty() && (lastIndexIsDigits(calculationString) || calculationString.charAt(lastIndex(calculationString)) == '%')) {
+        if (calculationString.isEmpty()){
+            calculationString.append("-");
+            textAreaForCalculation.setText(calculationString.toString());
+        }
+        else if ((lastIndexIsDigits(calculationString) || calculationString.charAt(lastIndex(calculationString)) == '%')) {
             calculationString.append("-");
             textAreaForCalculation.setText(calculationString.toString());
         }
@@ -266,10 +504,45 @@ public class MainController {
         alert.setTitle("About!");
         alert.setHeaderText("About This Basic Calculator");
         alert.setContentText("This is my first personal project, a basic calculator.\nThanks for using it!");
+        Image image = new Image(getClass().getResource("/assets/Sabii's avatar.jpeg").toExternalForm());
+        ImageView imageView = new ImageView(image);
+        imageView.setFitHeight(70);
+        imageView.setFitWidth(70);
+        alert.setGraphic(imageView);
         alert.showAndWait();
     }
     @FXML
     private void initialize(){
+        menuBar.setStyle("-fx-background-color: #F6BD60;");
+
+        upperAnchorPane.setStyle("-fx-background-color: #F7EDE2;");
+        textAreaForCalculation.setStyle("-fx-background-color: #FEF9EF;-fx-text-fill: #F28482;");
+        labelForEstimated.setStyle("-fx-text-fill: #84A59D;");
+
+        lowerAnchorPane.setStyle("-fx-background-color: #F7EDE2;");
+
+        String style = "-fx-background-color: #84A59D; -fx-text-fill: #FEF9EF;";
+
+        zeroButtonStyle.setStyle(style);
+        oneButtonStyle.setStyle(style);
+        twoButtonStyle.setStyle(style);
+        threeButtonStyle.setStyle(style);
+        fourButtonStyle.setStyle(style);
+        fiveButtonStyle.setStyle(style);
+        sixButtonStyle.setStyle(style);
+        sevenButtonStyle.setStyle(style);
+        eightButtonStyle.setStyle(style);
+        nineButtonStyle.setStyle(style);
+
+        decimalButtonStyle.setStyle(style);
+        percentageButtonStyle.setStyle(style);
+        divisionButtonStyle.setStyle(style);
+        multiplyButtonStyle.setStyle(style);
+        subtractButtonStyle.setStyle(style);
+        addingButtonStyle.setStyle(style);
+        acButtonStyle.setStyle(style);
+        deleteButtonStyle.setStyle(style);
+        equalButtonStyle.setStyle("-fx-background-color: #F28482; -fx-text-fill: FEF9EF;");
     }
     private void scrollToEnd(){
         textAreaForCalculation.positionCaret(calculationString.length());  // Scrolls to end

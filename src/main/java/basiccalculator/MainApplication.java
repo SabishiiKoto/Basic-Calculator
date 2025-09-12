@@ -3,6 +3,7 @@ package basiccalculator;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -14,6 +15,7 @@ public class MainApplication extends Application {
         Scene scene = new Scene(fxmlLoader.load(), 332, 545);
         stage.setTitle("Calculator");
         stage.setScene(scene);
+        stage.getIcons().add(new Image(getClass().getResource("/assets/calculator.png").toExternalForm()));
         stage.show();
     }
 
