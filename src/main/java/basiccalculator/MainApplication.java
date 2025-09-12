@@ -16,6 +16,7 @@ public class MainApplication extends Application {
         stage.setTitle("Calculator");
         stage.setScene(scene);
         stage.getIcons().add(new Image(getClass().getResource("/assets/calculator.png").toExternalForm()));
+        // Credit for the avatar image: <a href="https://www.flaticon.com/free-icons/calculator" title="calculator icons">Calculator icons created by Afdalul Zikri - Flaticon</a>
         stage.show();
     }
 
