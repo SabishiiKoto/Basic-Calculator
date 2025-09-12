@@ -501,9 +501,9 @@ public class MainController {
     @FXML
     void aboutTrigger(ActionEvent event) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("About!");
-        alert.setHeaderText("About This Basic Calculator");
-        alert.setContentText("This is my first personal project, a basic calculator.\nThanks for using it!");
+        alert.setTitle("About This Basic Calculator!");
+        alert.setHeaderText("Information and Contact");
+        alert.setContentText("I hope you enjoy the app! Please contact me if you see any error.\nFor contact, check out my GitHub:\nhttps://github.com/SabishiiKoto");
         Image image = new Image(getClass().getResource("/assets/Sabii's avatar.jpeg").toExternalForm());
         ImageView imageView = new ImageView(image);
         imageView.setFitHeight(70);
