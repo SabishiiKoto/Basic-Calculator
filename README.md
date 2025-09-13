@@ -4,6 +4,11 @@
 - Add, subtract, multiply, and divide numbers.
 - Handle decimal, negative numbers, and percentage.
 - Allow to pick a color theme among 5 options.
+<p align = "left">
+   <img src = "https://github.com/SabishiiKoto/Basic-Calculator/blob/master/src/main/resources/assets/Screenshot%202025-09-13%20113512.png?raw=true" width = "200" height = "400">
+   <img src = "https://github.com/SabishiiKoto/Basic-Calculator/blob/master/src/main/resources/assets/Screenshot%202025-09-13%20113523.png?raw=true" width = "200" height = "400">
+</p>
+
 
 # Technologies Used
 - Language: Java
