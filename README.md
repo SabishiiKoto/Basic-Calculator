@@ -5,13 +5,13 @@
 - Handle decimal, negative numbers, and percentage.
 - Allow to pick a color theme among 5 options.
 <p align = "center">
-   <img src = "https://github.com/SabishiiKoto/Basic-Calculator/blob/master/src/main/resources/assets/Screenshot%202025-09-13%20113428.png?raw=true" width = "300" height = "600">
-   <img src = "https://github.com/SabishiiKoto/Basic-Calculator/blob/master/src/main/resources/assets/Screenshot%202025-09-13%20113443.png?raw=true" width = "300" height = "600">
-   <img src = "https://github.com/SabishiiKoto/Basic-Calculator/blob/master/src/main/resources/assets/Screenshot%202025-09-13%20113501.png?raw=true" width = "300" height = "600">
+   <img src = "https://github.com/SabishiiKoto/Basic-Calculator/blob/master/src/main/resources/assets/Screenshot%202025-09-13%20113428.png?raw=true" width = "200" height = "400">
+   <img src = "https://github.com/SabishiiKoto/Basic-Calculator/blob/master/src/main/resources/assets/Screenshot%202025-09-13%20113443.png?raw=true" width = "200" height = "400">
+   <img src = "https://github.com/SabishiiKoto/Basic-Calculator/blob/master/src/main/resources/assets/Screenshot%202025-09-13%20113501.png?raw=true" width = "200" height = "400">
 </p>   
 <p align = "center">
-   <img src = "https://github.com/SabishiiKoto/Basic-Calculator/blob/master/src/main/resources/assets/Screenshot%202025-09-13%20113512.png?raw=true" width = "300" height = "600">
-   <img src = "https://github.com/SabishiiKoto/Basic-Calculator/blob/master/src/main/resources/assets/Screenshot%202025-09-13%20113523.png?raw=true" width = "300" height = "600">
+   <img src = "https://github.com/SabishiiKoto/Basic-Calculator/blob/master/src/main/resources/assets/Screenshot%202025-09-13%20113512.png?raw=true" width = "200" height = "400">
+   <img src = "https://github.com/SabishiiKoto/Basic-Calculator/blob/master/src/main/resources/assets/Screenshot%202025-09-13%20113523.png?raw=true" width = "200" height = "400">
 </p>
 
 
